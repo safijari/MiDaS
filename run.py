@@ -115,3 +115,6 @@ def main(input_path = "input",output_path = "output",model_path = "model.pt",
 
     # compute depth maps
     run(input_path, output_path, model_path, median_filter)
+
+if __name__ == '__main__':
+    argh.dispatch_command(main)
